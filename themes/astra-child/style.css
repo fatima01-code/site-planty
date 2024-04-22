@@ -1,0 +1,113 @@
+/**
+Theme Name: Astra Child
+Author: Brainstorm Force
+Author URI: http://wpastra.com/about/
+Description: Astra is the fastest, fully customizable & beautiful theme suitable for blogs, personal portfolios and business websites. It is very lightweight (less than 50KB on frontend) and offers unparalleled speed. Built with SEO in mind, Astra comes with schema.org code integrated so search engines will love your site. Astra offers plenty of sidebar options and widget areas giving you a full control for customizations. Furthermore, we have included special features and templates so feel free to choose any of your favorite page builder plugin to create pages flexibly. Some of the other features: # WooCommerce Ready # Responsive # Compatible with major plugins # Translation Ready # Extendible with premium addons # Regularly updated # Designed, Developed, Maintained & Supported by Brainstorm Force. Looking for a perfect base theme? Look no further. Astra is fast, fully customizable and beautiful theme!
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: astra-child
+Template: astra
+*/
+
+.boutonCommander {
+    color: white;
+    background-color: #DC9F96;
+}
+
+.nousRencontrer {
+    background-color: red;
+}
+
+.menu-link a {
+    color: white;
+}
+/* li:hover {
+    color: white;
+} */
+
+.current-menu-item {
+    font-weight: 600;
+}
+
+.general h2 {
+    color: white;
+}
+
+.general label {
+    color: white;
+}
+
+.formulaireDeCommande {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.fruit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 200px;
+}
+
+.compteurDeFruit {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    padding-bottom: 20px;
+    border-bottom: 2px solid white;
+}
+
+.fraise {
+    background-image: url("../../uploads/2024/03/Group-12-300x200.png");
+    background-size: contain;
+    background-position: center;
+    width: 200px;
+    height: 150px;
+}
+
+.fruit span {
+    text-align: center;
+    width: 70px;
+}
+
+.informations {
+    padding-right: 100px;
+    border-right: solid;
+    border-color: white;
+}
+
+.bouton {
+    margin-left: 44%;
+    margin-top: 30px;
+}
+
+.nombre {
+    max-width: 50%;
+    padding-top: 15px;
+}
+
+.votreCommande {
+    border-top: solid;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.wpcf7 input.wpcf7-form-control:not([type=submit]), .wpcf7 textarea.wpcf7-form-control {
+    padding: 0px;
+}
+
+.wpcf7-spinner {
+    display: none;
+}
+
+@media (max-width: 921px) { 
+
+    .informations {
+        padding-right: 50px;
+        border-color: red;
+    }
+
+}
