@@ -10,23 +10,62 @@ Text Domain: astra-child
 Template: astra
 */
 
-.boutonCommander {
+.canetteContainer figure{
+    background-image: url(../../uploads/2024/03/Group-5.png), url(../../uploads/2024/03/Group-4.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: 20% 50%, 80% 50%;
+    background-size: 40%, 40%;
+}
+.feuilleGauche {
+    transform: translateX(75%);
+}
+
+.feuilleDroite {
+    transform: translateX(-67%);
+}
+.commande {
     color: white;
+    background-color: #DC9F96;
+    font-weight: 600;
+    order: 3;
+}
+
+.lienAdmin {
+    order: 2;
+    padding-right: 40px;
+    padding-left: 24px;
+}
+
+.commande:hover {
+    background-color: #C02E44;
+    
+}
+
+.boutonCommanderPageHome a {
     background-color: #DC9F96;
 }
 
-.nousRencontrer {
-    background-color: red;
+.boutonCommanderPageHome:hover a{
+    background-color: #C02E44;
 }
 
-.menu-link a {
-    color: white;
+.boutonNousContacter {
+    text-align: center;
 }
-/* li:hover {
-    color: white;
-} */
+
+li.commande a.menu-link {
+    color: white !important; 
+}
 
 .current-menu-item {
+    font-weight: 600;
+}
+
+.rencontrer:hover {
+    font-weight: 600;
+}
+
+.lienAdmin:hover {
     font-weight: 600;
 }
 
@@ -41,7 +80,15 @@ Template: astra
 .formulaireDeCommande {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
+}
+.formulaireNousContacter form {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulaireNousContacter .wpcf7-submit {
+    margin: auto;
 }
 
 .fruit {
@@ -74,18 +121,23 @@ Template: astra
 }
 
 .informations {
-    padding-right: 100px;
+    padding-right: 5%;
     border-right: solid;
     border-color: white;
+    width: 50%;
+}
+
+.livraison {
+    width: 45%;
 }
 
 .bouton {
-    margin-left: 44%;
+    text-align: center;
     margin-top: 30px;
 }
 
 .nombre {
-    max-width: 50%;
+    max-width: 60px;
     padding-top: 15px;
 }
 
@@ -97,17 +149,86 @@ Template: astra
 
 .wpcf7 input.wpcf7-form-control:not([type=submit]), .wpcf7 textarea.wpcf7-form-control {
     padding: 0px;
+    padding-left: 10px;
 }
 
 .wpcf7-spinner {
     display: none;
 }
 
-@media (max-width: 921px) { 
+.bouton input {
+    background-color: #E0B9B4;
+}
+
+.boutonNousContacter input {
+    background-color: #E0B9B4;
+}
+
+.ast-container, .ast-container-fluid {
+    padding-right: 0;
+}
+
+.site-header-section>div:first-child {
+    padding-right: 0;
+}
+
+#ast-desktop-header .site-header-focus-item {
+    padding-right: 0;
+}
+
+@media (max-width: 922px) { 
 
     .informations {
-        padding-right: 50px;
-        border-color: red;
+        padding-right: 0%;
+        border-right: none;
+    }
+
+    .livraison {
+        padding-left: 0%;
+        padding-top: 30px;
+        width: 50%;
+    }
+
+    .bouton {
+        text-align: center;
+    }
+
+    .compteurDeFruit {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-bottom: 20px;
+        border-bottom: 2px solid white;
+        align-items: center;
+    }
+
+    .formulaireDeCommande {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .fruit {
+        padding-bottom: 30px;
+    }
+    
+    .wp-block-group {
+        background-color: white;
+    }
+}
+
+@media (max-width: 767px) { 
+    
+    .wp-block-uagb-container.uagb-block-c20eb09f {
+        background-image: none !important;
+    }
+
+    .containerForm {
+        background-color: #ECE2DA;
+    }
+
+    .livraison, .informations {
+        width: 80%;
     }
 
 }
